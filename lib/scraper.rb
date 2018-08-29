@@ -30,7 +30,8 @@ class Scraper
       course = Course.new
       self.title = post.css("h2").text
       self.schedule = post.css(".date").text
-      course.description = post.css("p").text
+      self.description = post.css("p").text
+      
     end
   end
 end
